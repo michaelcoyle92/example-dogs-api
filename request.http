@@ -1,0 +1,32 @@
+POST http://localhost:3000/dogs.json
+
+content-type: application/json
+
+{
+  "input_name": "Mr Dog",
+  "input_age": 17,
+  "input_breed": "Horse"
+}
+
+
+### Users create (signup)
+POST http://localhost:3000/users.json
+Content-Type: application/json
+
+{
+  "name": "Mrhorse",
+  "email": "mrhorse@test.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
+
+### Sessions create (login)
+POST http://localhost:3000/sessions.json
+Content-Type: application/json
+
+{
+  "email": "mrhorse@test.com",
+  "password": "password"
+}
+
+###
